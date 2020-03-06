@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/static/Teacher/css/style.css}">
+</head>
+<body>
+   <div class="login-box" style="left: 0">
+   	<form class="login-form" th:action="@{/user/login}" method="post">
+   		<h1>[[#{login.tip}]]</h1>
+        <p style="color:red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+   		<input type="text" name="username" th:placeholder="#{login.username}" class="txtb">
+		   <input type="password" name="password" th:placeholder="#{login.password}" class="txtb">
+		    <span class="checked">[[#{login.checked}]]</span>
+		   <input type="radio" name="sex" value="teacher" title="" checked>[[#{login.teacher}]]
+          <input type="radio" name="sex" value="manager" title="">[[#{login.manager}]]
+		<input type="submit" id="Login" th:value="#{login.login}" class="txtb login-btn">
+        <div>
+            <a class="" th:href="@{/index.html(l='zh_CN')}">中文</a>
+            <a class="" th:href="@{/index.html(l='en_US')}">English</a>
+        </div>
+   	</form>
+    </div>
+</body>
+</html>
