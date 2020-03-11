@@ -2,17 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d656ec06-1292-430f-97b3-74d5b2c0f584" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/Bean/Announcement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/Bean/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/Bean/TeacherMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/Controller/AnnouncementController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/Controller/TeacherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/Mapper/AnnouncementMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/Mapper/TeacherMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/Realm/TeahcerRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/Service/AnnouncementService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/Service/AnnouncementServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/Service/TeacherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/Service/TeacherServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/AnnouncementMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/TeacherMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Teacher/Announcement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__error_spring_boot_starter_jdbc_unknown.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherManager.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/Config/Myconfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/Config/Myconfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/Controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/Dao/TeacherDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/HandlerInterceptor/LoginHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/TeacherManageApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teachermanage/demo/TeacherManageApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Teachers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Teacher/Teachers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/teachermanage/demo/TeacherManageApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/teachermanage/demo/TeacherManageApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/teachermanage/demo/Config/Myconfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/teachermanage/demo/Config/Myconfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/teachermanage/demo/Config/Myconfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/teachermanage/demo/Config/Myconfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/teachermanage/demo/Controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/teachermanage/demo/Controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/teachermanage/demo/Dao/TeacherDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/teachermanage/demo/HandlerInterceptor/LoginHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/teachermanage/demo/TeacherManageApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/teachermanage/demo/TeacherManageApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Teachers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/teachermanage/demo/TeacherManageApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/teachermanage/demo/TeacherManageApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="HTML File" />
+        <option value="FxmlFile" />
+        <option value="spring-beans.schema" />
+        <option value="XML file" />
+        <option value="XML file P" />
         <option value="Class" />
       </list>
     </option>
@@ -28,13 +85,16 @@
     </option>
   </component>
   <component name="ProjectId" id="1Yb6An5I0zo7lJyJWNtG2N8arvm" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -53,9 +113,12 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\BaiduNetdiskDownload\TeacherManager\src\main\resources\templates\Teacher" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\BaiduNetdiskDownload\TeacherManager\src\main\resources\static\Teacher" />
       <recent name="E:\BaiduNetdiskDownload\TeacherManager\src\main\resources\static\Teacher\js" />
@@ -64,7 +127,38 @@
       <recent name="E:\BaiduNetdiskDownload\TeacherManager\src\main\resources\static" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.TeacherManageApplication">
+    <configuration name="TeacherManageApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TeacherManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.teachermanage.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.teachermanage.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.teachermanage.demo.TeacherManageApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeacherManageApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TeacherManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.teachermanage.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.teachermanage.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.teachermanage.demo.TeacherManageApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TeacherManageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="TeacherManager" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.teachermanage.demo.TeacherManageApplication" />
@@ -72,6 +166,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TeacherManageApplicationTests" />
+        <item itemvalue="JUnit.TeacherManageApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -105,7 +205,11 @@
       <workItem from="1583479586282" duration="483000" />
       <workItem from="1583486426778" duration="1895000" />
       <workItem from="1583491861415" duration="1988000" />
-      <workItem from="1583534769146" duration="2699000" />
+      <workItem from="1583534769146" duration="17459000" />
+      <workItem from="1583628490608" duration="15355000" />
+      <workItem from="1583707323516" duration="29740000" />
+      <workItem from="1583802445819" duration="27432000" />
+      <workItem from="1583884785617" duration="1241000" />
     </task>
     <task id="LOCAL-00001" summary="教师管理系统">
       <created>1583537644763</created>
@@ -114,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583537644763</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="教师管理系统">
+      <created>1583538440855</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583538440855</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,18 +236,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="教师管理系统" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="452" y="338" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583396889380">
+    <state x="1028" y="262" key="#Inspections" timestamp="1583803292518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="338" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583396889380" />
-    <state x="1105" y="132" width="815" height="580" key="#com.intellij.ide.util.MemberChooser" timestamp="1583225923196">
+    <state x="1028" y="262" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1583803292518" />
+    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583752828185">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1105" y="132" width="815" height="580" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583225923196" />
-    <state x="914" y="94" key="CommitChangelistDialog2" timestamp="1583537622578">
+    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583752828185" />
+    <state x="452" y="338" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583756139534">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="914" y="94" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583537622578" />
+    <state x="452" y="338" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583756139534" />
+    <state x="632" y="300" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1583803834146">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="632" y="300" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583803834146" />
+    <state x="1105" y="132" width="815" height="580" key="#com.intellij.ide.util.MemberChooser" timestamp="1583756102134">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1105" y="132" width="815" height="580" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583756102134" />
+    <state x="914" y="94" key="CommitChangelistDialog2" timestamp="1583538431707">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="914" y="94" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583538431707" />
     <state x="368" y="97" key="DiffContextDialog" timestamp="1583538401491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -149,73 +272,92 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1438" y="441" width="382" height="173" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583535954671" />
-    <state width="1197" height="228" key="GridCell.Tab.0.bottom" timestamp="1583411863768">
+    <state width="1877" height="332" key="GridCell.Tab.0.bottom" timestamp="1583844980094">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1197" height="228" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583411863768" />
-    <state width="1197" height="228" key="GridCell.Tab.0.center" timestamp="1583411863764">
+    <state width="1877" height="332" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583844980094" />
+    <state width="1877" height="332" key="GridCell.Tab.0.center" timestamp="1583844980094">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1197" height="228" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583411863764" />
-    <state width="1197" height="228" key="GridCell.Tab.0.left" timestamp="1583411863764">
+    <state width="1877" height="332" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583844980094" />
+    <state width="1877" height="332" key="GridCell.Tab.0.left" timestamp="1583844980093">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1197" height="228" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583411863764" />
-    <state width="1197" height="228" key="GridCell.Tab.0.right" timestamp="1583411863766">
+    <state width="1877" height="332" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583844980093" />
+    <state width="1877" height="332" key="GridCell.Tab.0.right" timestamp="1583844980094">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1197" height="228" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583411863766" />
-    <state width="1197" height="228" key="GridCell.Tab.1.bottom" timestamp="1583411863771">
+    <state width="1877" height="332" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583844980094" />
+    <state width="1877" height="332" key="GridCell.Tab.1.bottom" timestamp="1583844980096">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1197" height="228" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583411863771" />
-    <state width="1197" height="228" key="GridCell.Tab.1.center" timestamp="1583411863769">
+    <state width="1877" height="332" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583844980096" />
+    <state width="1877" height="332" key="GridCell.Tab.1.center" timestamp="1583844980095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1197" height="228" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583411863769" />
-    <state width="1197" height="228" key="GridCell.Tab.1.left" timestamp="1583411863768">
+    <state width="1877" height="332" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583844980095" />
+    <state width="1877" height="332" key="GridCell.Tab.1.left" timestamp="1583844980095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1197" height="228" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583411863768" />
-    <state width="1197" height="228" key="GridCell.Tab.1.right" timestamp="1583411863770">
+    <state width="1877" height="332" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583844980095" />
+    <state width="1877" height="332" key="GridCell.Tab.1.right" timestamp="1583844980095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1197" height="228" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583411863770" />
-    <state width="1197" height="323" key="GridCell.Tab.2.bottom" timestamp="1583299480988">
+    <state width="1877" height="332" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583844980095" />
+    <state width="1877" height="346" key="GridCell.Tab.2.bottom" timestamp="1583804419607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1197" height="323" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583299480988" />
-    <state width="1197" height="323" key="GridCell.Tab.2.center" timestamp="1583299480987">
+    <state width="1877" height="346" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583804419607" />
+    <state width="1877" height="346" key="GridCell.Tab.2.center" timestamp="1583804419606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1197" height="323" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583299480987" />
-    <state width="1197" height="323" key="GridCell.Tab.2.left" timestamp="1583299480987">
+    <state width="1877" height="346" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583804419605" />
+    <state width="1877" height="346" key="GridCell.Tab.2.left" timestamp="1583804419605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1197" height="323" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583299480987" />
-    <state width="1197" height="323" key="GridCell.Tab.2.right" timestamp="1583299480988">
+    <state width="1877" height="346" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583804419605" />
+    <state width="1877" height="346" key="GridCell.Tab.2.right" timestamp="1583804419607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1197" height="323" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583299480988" />
-    <state x="922" y="234" key="SettingsEditor" timestamp="1583536386043">
+    <state width="1877" height="346" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583804419607" />
+    <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1583727150996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="922" y="234" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583536386043" />
-    <state x="928" y="258" key="Vcs.Push.Dialog.v2" timestamp="1583538409252">
+    <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1583727150996" />
+    <state x="549" y="98" key="SettingsEditor" timestamp="1583804913322">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="928" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583538409252" />
-    <state x="640" y="354" width="629" height="341" key="com.intellij.ide.util.TipDialog" timestamp="1583535767519">
+    <state x="549" y="98" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583804913322" />
+    <state x="928" y="258" key="Vcs.Push.Dialog.v2" timestamp="1583539166567">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="354" width="629" height="341" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583535767519" />
+    <state x="928" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583539166567" />
+    <state x="640" y="354" width="629" height="341" key="com.intellij.ide.util.TipDialog" timestamp="1583884782334">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="354" width="629" height="341" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583884782334" />
     <state x="636" y="367" width="716" height="306" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1583327787647">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="636" y="367" width="716" height="306" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583327787647" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1583369452882">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1583738669969">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583369452882" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583738669969" />
+    <state x="623" y="224" width="672" height="678" key="search.everywhere.popup" timestamp="1583824525318">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="224" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583824525318" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/teachermanage/demo/Config/Myconfig.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

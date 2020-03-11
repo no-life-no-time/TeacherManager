@@ -9,16 +9,16 @@
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin"  th:fragment="topbar">
     <div class="layui-header">
-        <div class="layui-logo">教师[[${session.loginteacher}]]</div>
+        <div class="layui-logo">教师系统</div>
         <!-- 头部区域（可配合layui已有的水平导航） -->
         <ul class="layui-nav layui-layout-right">
             <li class="layui-nav-item">
                 <a href="javascript:;">
                     <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
-                    张老师
+                    [[${session.MsgTN}]]老师
                 </a>
             </li>
-            <li class="layui-nav-item"><a th:href="@{/Logout/teacher(msg=Logout)}">退出</a></li>
+            <li class="layui-nav-item"><a th:href="@{/Logout/teacher}">退出</a></li>
         </ul>
     </div>
     <div class="layui-side layui-bg-black">
@@ -28,8 +28,10 @@
                 <li class="layui-nav-item layui-nav-itemed">
                     <a class="" href="javascript:;">功能菜单</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">个人信息</a></dd>
-                        <dd><a href="javascript:;">课表信息</a></dd>
+                        <dd ><a th:href="@{/show}"th:class="${activeUri=='show'?'layui-this':' '}">通知</a>
+                       </dd>
+                        <dd><a th:href="@{/TeacherMsg}" th:class="${activeUri=='TeacherMsg'?'layui-this':' '}">个人信息</a></dd>
+                        <dd ><a href="">课表信息</a></dd>
                         <dd><a href="javascript:;">修改密码</a></dd>
                     </dl>
                 </li>
