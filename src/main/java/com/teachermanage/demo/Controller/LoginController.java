@@ -1,28 +1,17 @@
 package com.teachermanage.demo.Controller;
-import com.teachermanage.demo.Bean.Announcement;
-import com.teachermanage.demo.Bean.Teacher;
-import com.teachermanage.demo.Mapper.AnnouncementMapper;
-import com.teachermanage.demo.Mapper.TeacherMapper;
 import com.teachermanage.demo.Service.AnnouncementServiceImp;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
-import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.support.SessionStatus;
-
-import javax.servlet.http.HttpSession;
-import java.util.List;
 import java.util.Map;
 @Controller
 public class LoginController {
@@ -53,6 +42,7 @@ public class LoginController {
             map.put("msg","密码错误");
             return "Login";
         }
+        System.out.println(identity);
         return "teacher/Announcement.html";
 //       session.setAttribute("loginteacher","1");
     }

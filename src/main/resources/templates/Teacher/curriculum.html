@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" th:href="@{/static/Teacher/css/layui.css}"   media="all">
+    <link rel="stylesheet" th:href="@{/static/Teacher/js/layui.js}"   media="all">
+    <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+</head>
+<body>
+<div th:insert="index::topbar(activeUri='TeacherCl')"></div>
+<h1>课程表</h1>
+<div style="position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color:white;
+	text-align: center;">
+    <div>
+        <table class="layui-table" style="height: 600px">
+            <colgroup>
+                <col width="150" height="100">
+                <col width="150" height="100">
+                <col width="150" height="100">
+                <col width="150" height="100">
+                <col width="150" height="100">
+                <col width="150" height="100">
+                <col width="150" height="100">
+                <col width="150" height="100">
+            </colgroup>
+            <thead>
+            <tr>
+                <th>    </th>
+                <th>星期一</th>
+                <th>星期二</th>
+                <th>星期三</th>
+                <th>星期四</th>
+                <th>星期五</th>
+                <th>星期六</th>
+                <th>星期日</th>
+            </tr>
+            </thead>
+            <tbody>
+               <tr th:each="kbs,kb:${KB}">
+                <td>[[${kb.index}+1]]-[[${kb.index}+2]]节</td>
+                <td th:text="${kbs[0]}"></td>
+                <td th:text="${kbs[1]}"></td>
+                <td th:text="${kbs[2]}"></td>
+                <td th:text="${kbs[3]}"></td>
+                <td th:text="${kbs[4]}"></td>
+                <td th:text="${kbs[5]}"></td>
+                <td th:text="${kbs[6]}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -16,11 +16,10 @@ import java.util.List;
 @SpringBootTest
 class TeacherManageApplicationTests {
     @Autowired
-    AnnouncementServiceImp announcementServiceImp;
+    TeacherServiceImp teacherServiceImp;
     @Test
     void contextLoads() {
-        List<Announcement> a=announcementServiceImp.getAll();
-        System.out.println(a);
+         teacherServiceImp.upDateTeacher("admin","ffff");
 
 
     }

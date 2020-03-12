@@ -31,8 +31,8 @@
                         <dd ><a th:href="@{/show}"th:class="${activeUri=='show'?'layui-this':' '}">通知</a>
                        </dd>
                         <dd><a th:href="@{/TeacherMsg}" th:class="${activeUri=='TeacherMsg'?'layui-this':' '}">个人信息</a></dd>
-                        <dd ><a href="">课表信息</a></dd>
-                        <dd><a href="javascript:;">修改密码</a></dd>
+                        <dd ><a th:href="@{/TeacherCl}" th:class="${activeUri=='TeacherCl'?'layui-this':' '}">课表信息</a></dd>
+                        <dd><a th:href="@{/ChangePassword}" th:class="${activeUri=='CP'?'layui-this':' '}">修改密码</a></dd>
                     </dl>
                 </li>
             </ul>

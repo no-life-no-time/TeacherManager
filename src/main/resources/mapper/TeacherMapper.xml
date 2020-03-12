@@ -9,6 +9,12 @@
     <select id="getTeacherMsg" parameterType="Integer" resultType="TeacherMsg">
            select * from teacher_msg where teacher_id=#{teacher_id}
     </select>
+    <update id="upDateTeacher" parameterType="String">
+        update teacher set teacher_password=#{password} where teacher_username=#{username}
+    </update>
+    <select id="getCurriculum" parameterType="Integer" resultType="Curriculum">
+           select * from curriculum where tid=#{tid}
+    </select>
 </mapper>
 
 
