@@ -21,7 +21,6 @@ import java.util.Map;
 
 @Configuration
 public class Myconfig {
-    Logger logger = LoggerFactory.getLogger(getClass());
     //设置映射,将所有组件注册在容器
     @Bean
     public WebMvcConfigurer webMvcConfigurer(){
@@ -88,7 +87,6 @@ public class Myconfig {
         Map<String,String> filterMap=new LinkedHashMap<>();
         filterMap.put("/teacher/teacher.html","authc");
         //无权限跳转的url
-        System.out.println("4");
         shiroFilterFactoryBean.setLoginUrl("/index.html");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterMap);
       return shiroFilterFactoryBean;

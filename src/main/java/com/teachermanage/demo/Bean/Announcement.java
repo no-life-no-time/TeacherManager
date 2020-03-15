@@ -1,5 +1,4 @@
 package com.teachermanage.demo.Bean;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -43,7 +43,7 @@ public class LoginController {
             return "Login";
         }
         System.out.println(identity);
-        return "teacher/Announcement.html";
+        return "Teacher/Announcement";
 //       session.setAttribute("loginteacher","1");
     }
         //"teacher".equals(identity)&&"admin".equals(username.trim())&&"123456".equals(password.trim())

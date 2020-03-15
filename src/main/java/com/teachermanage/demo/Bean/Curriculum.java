@@ -15,4 +15,5 @@ public class Curriculum {
     private String classname;
     private String address;
     private Integer tid;
+    private String allweek;
 }

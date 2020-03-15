@@ -28,11 +28,11 @@
                 <li class="layui-nav-item layui-nav-itemed">
                     <a class="" href="javascript:;">功能菜单</a>
                     <dl class="layui-nav-child">
-                        <dd ><a th:href="@{/show}"th:class="${activeUri=='show'?'layui-this':' '}">通知</a>
-                       </dd>
+                        <dd ><a th:href="@{/show}"th:class="${activeUri=='show'?'layui-this':' '}">通知</a></dd>
                         <dd><a th:href="@{/TeacherMsg}" th:class="${activeUri=='TeacherMsg'?'layui-this':' '}">个人信息</a></dd>
                         <dd ><a th:href="@{/TeacherCl}" th:class="${activeUri=='TeacherCl'?'layui-this':' '}">课表信息</a></dd>
                         <dd><a th:href="@{/ChangePassword}" th:class="${activeUri=='CP'?'layui-this':' '}">修改密码</a></dd>
+                        <dd><a th:href="@{/TeacherSalary}" th:class="${activeUri=='TS'?'layui-this':' '}">我的工资</a></dd>
                     </dl>
                 </li>
             </ul>
@@ -40,13 +40,8 @@
     </div>
     <div class="layui-footer">
         <!-- 底部固定区域 -->
-        © layui.com - 底部固定区域
-    </div>
+        © 教师管理系统前台
+    </div
 </div>
-<script th:src="@{/Teacher/js/layui.js}" >
-
-</script>
-<script>
-</script>
 </body>
 </html>

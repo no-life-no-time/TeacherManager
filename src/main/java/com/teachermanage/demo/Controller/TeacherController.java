@@ -1,7 +1,9 @@
 package com.teachermanage.demo.Controller;
 
 import com.teachermanage.demo.Bean.Curriculum;
+import com.teachermanage.demo.Bean.Salary;
 import com.teachermanage.demo.Bean.Teacher;
+import com.teachermanage.demo.Service.SalaryServiceImp;
 import com.teachermanage.demo.Service.TeacherServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,6 +20,8 @@ import java.util.Map;
 public class TeacherController {
     @Autowired
     TeacherServiceImp teacherServiceImp;
+    @Autowired
+    SalaryServiceImp salaryServiceImp;
     @GetMapping("/TeacherMsg")
     public String TeacherMsg(){
         return "Teacher/Teachers";
@@ -54,19 +58,26 @@ public class TeacherController {
         Object[][] strings=new Object[x][3];
         int y=0;
         String[][] KB=new String[6][7];
+        //稀疏数组存值
         for (Curriculum curriculum : CL) {
             strings[y][0]= curriculum.getJieci();
             strings[y][1]=curriculum.getWeek();
-            strings[y][2]=curriculum.getCname()+" "+curriculum.getClassname()+" "+curriculum.getAddress();
+            strings[y][2]=curriculum.getCname()+" "+curriculum.getClassname()+" "+curriculum.getAddress()+" "+curriculum.getAllweek()+"周";
             y++;
             System.out.println(curriculum);
         }
+        //赋值,如果有同位的便附加上去
         for (Object[] string : strings) {
-            Integer xIndex= (Integer) string[0];
-            Integer yIndex=(Integer)string[1];
-            int xFor=(int)xIndex-1;
-            int yFor=(int)yIndex-1;
-            KB[xFor][yFor]=string[2].toString();
+                Integer xIndex= (Integer) string[0];
+                Integer yIndex=(Integer)string[1];
+                int xFor=(int)xIndex-1;
+                int yFor=(int)yIndex-1;
+                if ( null==KB[xFor][yFor]){
+                    KB[xFor][yFor]=string[2].toString();
+                }
+                else {
+                    KB[xFor][yFor]+="/"+string[2].toString();
+                }
         }
         for (String[] objects : KB) {
             for (String object : objects) {
@@ -76,5 +87,13 @@ public class TeacherController {
         }
         model.addAttribute("KB",KB);
         return "Teacher/curriculum";
+    }
+    @GetMapping("TeacherSalary")
+    public String TeacherSalary(HttpSession session,Model model)
+    {
+        Integer tid=(Integer) session.getAttribute("Tid");
+        List<Salary> salaries=salaryServiceImp.getSalaryByTid(tid);
+        model.addAttribute("salary",salaries);
+        return "Teacher/TeacherSalary";
     }
 }

@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.sql.Date;
 
 
 @Data
@@ -14,4 +15,9 @@ public class TeacherMsg {
     private String teacher_name;
     private Integer teacher_age;
     private Integer teacher_sex;
+    private String  teacher_card;
+    private Date teacher_birth;
+    private Date teacher_workDate;
+    private String teacher_major;
+    private String teacher_remark;
 }

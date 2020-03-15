@@ -35,6 +35,7 @@ public class TeahcerRealm extends AuthorizingRealm {
         TeacherMsg teacherMsg=teacherService.getTeacherMsg(teacher_id);
         Subject subject=SecurityUtils.getSubject();
         Session teacherMsgSession=subject.getSession();
+        teacherMsgSession.setAttribute("Tid",teacher_id);
         teacherMsgSession.setAttribute("TUN",token.getUsername());
         teacherMsgSession.setAttribute("MsgTN",teacherMsg.getTeacher_name());
         return new SimpleAuthenticationInfo("",teacher.getTeacher_password(),"");

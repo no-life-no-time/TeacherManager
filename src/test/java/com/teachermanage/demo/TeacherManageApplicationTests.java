@@ -4,6 +4,7 @@ import com.teachermanage.demo.Bean.Announcement;
 import com.teachermanage.demo.Bean.Teacher;
 import com.teachermanage.demo.Mapper.TeacherMapper;
 import com.teachermanage.demo.Service.AnnouncementServiceImp;
+import com.teachermanage.demo.Service.SalaryServiceImp;
 import com.teachermanage.demo.Service.TeacherServiceImp;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,10 +17,10 @@ import java.util.List;
 @SpringBootTest
 class TeacherManageApplicationTests {
     @Autowired
-    TeacherServiceImp teacherServiceImp;
+    SalaryServiceImp salaryServiceImp;
     @Test
     void contextLoads() {
-         teacherServiceImp.upDateTeacher("admin","ffff");
+        System.out.println(salaryServiceImp.getSalaryByTid(1));
 
 
     }
